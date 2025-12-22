@@ -1,0 +1,30 @@
+.footer {
+    background-color: $gris-fonce;
+    padding: 20px;
+    color: $blanc;
+
+    &__logo {
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    &__liste {
+        list-style: none;
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: $blanc;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        i {
+            margin-right: 10px;
+            width: 20px;
+        }
+    }
+}

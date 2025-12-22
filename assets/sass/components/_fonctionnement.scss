@@ -1,0 +1,49 @@
+.fonctionnement {
+    padding: 20px;
+    background-color: $blanc;
+
+    h2 {
+        margin-bottom: 25px;
+    }
+
+    &__liste {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 0 12px;
+    }
+
+    &__etape {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        height: 72px;
+        background-color: $gris-fond;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        position: relative;
+        padding-left: 40px;
+
+        i {
+            color: $gris-fonce;
+        }
+
+        p {
+            font-weight: 500;
+        }
+    }
+
+    &__numero {
+        position: absolute;
+        left: -12px;
+        background-color: $violet;
+        color: $blanc;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9rem;
+    }
+}

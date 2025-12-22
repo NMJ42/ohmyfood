@@ -1,0 +1,14 @@
+.restaurants {
+    padding: 20px;
+    background-color: $gris-fond;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    &__liste {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,78 @@
+.carte {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background-color: $blanc;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+    &__badge {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: $vert;
+        color: #2E7D67;
+        padding: 5px 12px;
+        border-radius: 3px;
+        font-size: 0.85rem;
+    }
+
+    &__image {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    &__contenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__titre {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+    }
+
+    &__lieu {
+        font-size: 0.95rem;
+        color: $gris-fonce;
+    }
+
+    &__favori {
+        position: relative;
+        width: 22px;
+        height: 21px;
+        cursor: pointer;
+
+        &-vide {
+            font-size: 22px;
+            color: $noir;
+        }
+
+        &-plein {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 22px;
+            background: linear-gradient(to bottom, $rose, $violet);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            opacity: 0;
+            transition: opacity 300ms;
+        }
+
+        &:hover &-plein {
+            opacity: 1;
+        }
+    }
+}

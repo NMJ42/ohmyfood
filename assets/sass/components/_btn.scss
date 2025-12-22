@@ -1,0 +1,21 @@
+.btn {
+    display: inline-block;
+    min-width: 186px;
+    height: 50px;
+    padding: 15px 25px;
+    background: linear-gradient(to bottom, $rose, $violet);
+    color: $blanc;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: box-shadow 300ms, opacity 300ms;
+
+    &:hover {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+        opacity: 0.85;
+    }
+}

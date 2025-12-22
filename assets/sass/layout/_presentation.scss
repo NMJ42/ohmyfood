@@ -1,0 +1,18 @@
+.presentation {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: $gris-fond;
+
+    h1 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        color: $gris-fonce;
+        margin-bottom: 25px;
+    }
+}
