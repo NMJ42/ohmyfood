@@ -1,12 +1,16 @@
 .carte {
     display: block;
-    text-decoration: none;
-    color: inherit;
     background-color: $blanc;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: relative;
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
 
     &__badge {
         position: absolute;
@@ -17,6 +21,7 @@
         padding: 5px 12px;
         border-radius: 3px;
         font-size: 0.85rem;
+        z-index: 1;
     }
 
     &__image {
@@ -35,6 +40,8 @@
     &__info {
         display: flex;
         flex-direction: column;
+        text-decoration: none;
+        color: inherit;
     }
 
     &__titre {
