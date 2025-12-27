@@ -59,27 +59,27 @@
         width: 22px;
         height: 21px;
         cursor: pointer;
+    }
 
-        &-vide {
-            font-size: 22px;
-            color: $noir;
-        }
+    &__favori-vide {
+        font-size: 22px;
+        color: $noir;
+    }
 
-        &-plein {
-            position: absolute;
-            top: 0;
-            left: 0;
-            font-size: 22px;
-            background: linear-gradient(to bottom, $rose, $violet);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            opacity: 0;
-            transition: opacity 300ms;
-        }
+    &__favori-plein {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 22px;
+        background: linear-gradient(to bottom, $rose, $violet);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        opacity: 0;
+        transition: opacity 300ms;
+    }
 
-        &:hover &-plein {
-            opacity: 1;
-        }
+    &__favori:hover &__favori-plein {
+        opacity: 1;
     }
 }
