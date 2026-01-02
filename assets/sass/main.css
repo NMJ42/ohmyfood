@@ -212,7 +212,7 @@ img {
 .plat__check {
   width: 0;
   min-width: 0;
-  height: 100%;
+  height: 100px;
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
@@ -233,6 +233,7 @@ img {
 }
 .plat:hover .plat__check {
   width: 60px;
+  height: 100px;
 }
 .plat:hover .plat__contenu {
   width: calc(100% - 60px);
@@ -374,6 +375,7 @@ img {
   color: transparent;
   opacity: 0;
   transition: opacity 300ms;
+  pointer-events: none;
 }
 .menu__favori:hover .menu__favori-plein {
   opacity: 1;
@@ -485,18 +487,22 @@ img {
     font-size: 18px;
   }
   .fonctionnement {
-    padding: 40px 50px;
+    padding: 60px 100px;
   }
   .fonctionnement__liste {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
   }
   .fonctionnement__etape {
     flex: 1;
-    min-width: 200px;
-    max-width: 300px;
+    min-width: 0;
+    max-width: none;
+    text-align: center;
+    padding-left: 30px;
+    gap: 15px;
+    height: 60px;
   }
   .fonctionnement__etape p {
     white-space: nowrap;
@@ -506,19 +512,18 @@ img {
     padding: 40px 100px;
   }
   .restaurants h2 {
-    max-width: calc(100% - 50px);
-    padding-left: 25px;
+    margin-bottom: 20px;
   }
   .restaurants__liste {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 50px;
   }
   .carte {
-    width: calc(50% - 50px);
-    max-width: 490px;
+    width: calc(50% - 25px);
+    max-width: none;
   }
   .carte__image {
     height: 180px;

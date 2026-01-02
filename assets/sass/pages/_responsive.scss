@@ -76,19 +76,23 @@
     }
 
     .fonctionnement {
-        padding: 40px 50px;
+        padding: 60px 100px;
 
         &__liste {
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-between;
             gap: 30px;
         }
 
         &__etape {
             flex: 1;
-            min-width: 200px;
-            max-width: 300px;
+            min-width: 0;
+            max-width: none;
+            text-align: center;
+            padding-left: 30px;
+            gap: 15px;
+            height: 60px;
 
             p {
                 white-space: nowrap;
@@ -101,22 +105,21 @@
         padding: 40px 100px;
 
         h2 {
-            max-width: calc(100% - 50px);
-            padding-left: 25px;
+            margin-bottom: 20px;
         }
 
         &__liste {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 50px;
         }
     }
 
     .carte {
-        width: calc(50% - 50px);
-        max-width: 490px;
+        width: calc(50% - 25px);
+        max-width: none;
 
         &__image {
             height: 180px;
